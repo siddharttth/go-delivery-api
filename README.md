@@ -7,3 +7,17 @@ This is a backend REST API built with **Go** and **Fiber** that calculates the *
 
 
 ```
+
+You can test the /calculate endpoint using the following cURL command:
+```sh
+curl --location 'https://twf-siddharth.up.railway.app/calculate' \
+--header 'Content-Type: application/json' \
+--data '{
+  "products": {
+    "A": 1,
+    "D": 1,
+    "I": 3
+  }
+}'
+```
+✅ This will send a POST request with the specified product quantities to your deployed API and return the minimum delivery cost based on the logic you've implemented.
