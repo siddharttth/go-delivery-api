@@ -13,7 +13,11 @@ curl --location 'https://twf-siddharth.up.railway.app/calculate' \
 --data '{
   "products": {
     "A": 1,
+//    "B":1,
+//    "C":1,
     "D": 1,
+//   "G": 1,
+//   "H": 1,
     "I": 3
   }
 }'
