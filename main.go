@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-delivery-api/controller"
+	"go-delivery-api/routes"
 	"log"
 	"os"
 
@@ -10,7 +10,8 @@ import (
 
 func main() {
 	app := fiber.New()
-	app.Post("/calculate", controller.CalculateCost)
+	routes.SetupRoutes(app)
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
